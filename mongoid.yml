@@ -6,3 +6,10 @@ development:
         - localhost:27017
       options:
         server_selection_timeout: 1
+
+production:
+  clients:
+    default:
+      uri: mongodb+srv://<%= ENV['MONGODB_CLUSTER_USER'] %>:<%= ENV['MONGODB_CLUSTER_PASSWORD'] %>@<%= ENV['MONGODB_CLUSTER_URL'] %>
+      options:
+        server_selection_timeout: 5
