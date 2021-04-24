@@ -1,0 +1,8 @@
+development:
+  clients:
+    default:
+      database: freedom_stack
+      hosts:
+        - localhost:27017
+      options:
+        server_selection_timeout: 1
