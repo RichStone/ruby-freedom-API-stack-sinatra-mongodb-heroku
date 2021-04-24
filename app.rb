@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
+require 'dotenv/load'
 require 'mongoid'
 project_root = File.dirname(__FILE__)
 Mongoid.load!(File.join(project_root, 'mongoid.yml'))

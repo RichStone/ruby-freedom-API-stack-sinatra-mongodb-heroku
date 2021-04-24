@@ -11,6 +11,7 @@ GEM
       zeitwerk (~> 2.3)
     bson (4.12.0)
     concurrent-ruby (1.1.8)
+    dotenv (2.7.6)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     minitest (5.14.4)
@@ -46,6 +47,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   mongoid
   sinatra
   sinatra-contrib
