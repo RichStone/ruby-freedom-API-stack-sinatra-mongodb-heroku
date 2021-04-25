@@ -7,6 +7,15 @@ development:
       options:
         server_selection_timeout: 1
 
+test:
+  clients:
+    default:
+      database: freedom_stack_test
+      hosts:
+        - localhost:27017
+      options:
+        server_selection_timeout: 1
+
 production:
   clients:
     default:
