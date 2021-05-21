@@ -34,15 +34,28 @@ Puma starting in single mode...
 * Listening on tcp://[::1]:4567
 ```
 
-## Heroku deployment
+## MongoDB Atlas setup
 
-To deploy on Heroku you will need a MongoDB Atlas account. After setting everything up,
-you will need to create an `.env` file and add your configurations:
+If you want to use MongoDB cloud solution as your database, create a `.env` file with the following settings:
 
 ```shell
 MONGODB_CLUSTER_USER=your-mongodb-user
 MONGODB_CLUSTER_PASSWORD=your-secret-password
 MONGODB_CLUSTER_URL=your-cluster.zhtt7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+```
+
+If you need more instructions, see the section [More Details](#more-details) below.
+
+## Heroku deployment
+
+To deploy on Heroku you will need a MongoDB Atlas account. After setting everything up on Heroku,
+you will additionally need to set environment variables on Heroku using the variables from your local `.env` file
+(however, probably you'll want to use different DB settings for production):
+
+```shell
+heroku config:set MONGODB_CLUSTER_USER=your-mongodb-user
+heroku config:set MONGODB_CLUSTER_PASSWORD=your-secret-password
+heroku config:set MONGODB_CLUSTER_URL="your-cluster.zhtt7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 ```
 
 If you need more instructions, see the section [More Details](#more-details) below.
