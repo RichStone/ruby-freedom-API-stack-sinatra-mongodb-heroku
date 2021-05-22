@@ -76,7 +76,11 @@ $ # commit to git
 4. Push to the branch (`git push origin feature-branch`)
 5. Create a new Pull Request in GitHub
 
+## Build a full web app
+
+This API template will unfold in full-fledged web app template here: https://github.com/RichStone/ruby-freedom-webapp-stack-sinatra-mongodb-heroku-bulma-oauth
+
 ## More details
 
 If you need more details about any of the steps, there's a comprehensive step-by-step
-tutorial that builds this template from scratch over at [richstone.io](https://richstone.io/p/6205b610-cf12-4cbb-bb92-7f649422b43f/).
+tutorial that builds this template from scratch over at [richstone.io](https://richstone.io/the-freedom-stack-ruby-api-app-sinatra-mongodb-heroku-minitest/).
